@@ -3,4 +3,4 @@ project(Assignment2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Assignment2 date.cpp date.h)
+add_executable(Assignment2 date.cpp date.h datedriver.cpp)

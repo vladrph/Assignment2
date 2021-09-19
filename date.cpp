@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-#include <functional>
+
 #include "date.h"
 //#include "date.h"
 
@@ -33,7 +33,7 @@ Date::Date() : myDay(01), myMonth(01), myYear(0001) {
 
 //*************************************************************************************
 //Name:	Explicit Date constructor
-//Precondition: Unisgned objects are pointing to the local variables.
+//Precondition: Unsigned objects are pointing to the local variables.
 //Postcondition: Objects uses pointers to point to the myMonth, myDay, and myYear date object respectively
 //Description: This an explicit value constructor that set the date to a user defined date. The date prints 2-digits for
 // month (m) and day (d), and 4-digits for year (y). This function also sorts the day for specific parameters.
@@ -49,23 +49,20 @@ Date::Date(unsigned m, unsigned d, unsigned y) {
 
     if (m >= 13 || m <= 0) {
 
-        cout << "Month = " << myMonth << " is incorrect" << endl;
+        cout << "Month = "<< setfill('0') << setw(2) << myMonth << " is incorrect" << endl;
     }
     if (m == 2 && d >= 30) {
 
-        cout << "Day = " << myDay << " is incorrect\n" << endl;
+        cout << "Day = "<< setfill('0') << setw(2) <<  myDay << " is incorrect\n" << endl;
     }
     if (d >= 32) {
 
-        cout << "Day = " << myDay << " is incorrect \n" << endl;
+        cout << "Day = "<< setfill('0') << setw(2) <<  myDay << " is incorrect" << endl;
     }
     if (y == 0000) {
 
         cout << "Year = " << setfill('0') << setw(4) << myYear << " is incorrect\n" << endl;
     } else if (m >= 1 && m <= 12 && d >= 0 && d <= 29 && y >= 0 && y <= 9999) {
-      //  myMonth = getMonth();
-       // myYear = getYear();
-      //  myDay = getDay();
         display();
 
 
@@ -198,7 +195,7 @@ ostream &operator<<(ostream &out, Date &dateObj) {
 
     out << setfill('0') << setw(2) << dateObj.myMonth << "/";
     out << setfill('0') << setw(2) << dateObj.myDay << "/";
-    out << setfill('0') << setw(4) << dateObj.myYear << " ";
+    out << setfill('0') << setw(4) << dateObj.myYear << "";
 
 
     return out;

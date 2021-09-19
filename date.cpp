@@ -101,9 +101,9 @@ void Date::display() {
 
 //*************************************************************************************
 //Name:	getMonth
-//Precondition:
-//Postcondition:
-//Description:
+//Precondition:  The function returns 1 to the user.
+//Postcondition:  The function gets the value stored in the myMonth object.
+//Description:  The function uses a pointer to return the value stored in myMonth object to the user.
 //
 //
 //*************************************************************************************
@@ -115,9 +115,9 @@ int Date::getMonth() {
 
 //*************************************************************************************
 //Name:	getDay
-//Precondition:
-//Postcondition:
-//Description:
+//Precondition:  The function returns 1 to the user.
+//Postcondition:  The function gets the value stored in the myDay object.
+//Description: The function uses a pointer to return the value stored in myDay object to the user.
 //
 //
 //*************************************************************************************
@@ -136,9 +136,9 @@ int Date::getDay() {
 
 //*************************************************************************************
 //Name:	getYear
-//Precondition:
-//Postcondition:
-//Description:
+//Precondition: The function returns 1 to the user.
+//Postcondition: The function gets the value stored in the myDay object.
+//Description: The function uses a pointer to return the value stored in myYear object to the user.
 
 //
 //
@@ -151,9 +151,9 @@ int Date::getYear() {
 
 //*************************************************************************************
 //Name: setMonth
-//Precondition:
-//Postcondition:
-//Description:
+//Precondition:  Empty mutator that changes the month.
+//Postcondition: The function gets the value stored in the myMonth object.
+//Description:  This function allows clients to change the value stored in member m variable.
 //
 //
 //*************************************************************************************
@@ -165,9 +165,9 @@ void Date::setMonth(unsigned m) {
 
 //*************************************************************************************
 //Name:	setDay
-//Precondition:
-//Postcondition:
-//Description:
+//Precondition:  Empty mutator that changes the day.
+//Postcondition: The function gets the value stored in the myDay object.
+//Description:  This function allows clients to change the value stored in member d variable.
 //
 //
 //*************************************************************************************
@@ -179,10 +179,10 @@ void Date::setDay(unsigned d) {
 }
 
 //*************************************************************************************
-//Name:	getYear
-//Precondition:
-//Postcondition:
-//Description:
+//Name:	setYear
+//Precondition:  Empty mutator that changes the year.
+//Postcondition: The function gets the value stored in the myYear object.
+//Description:  This function allows clients to change the value stored in member y variable.
 //
 //
 //*************************************************************************************
@@ -215,12 +215,12 @@ ostream &operator<<(ostream &out, Date &dateObj) {
 //EXAMPLE OF PROGRAM HEADER
 /********************************************************************************************
 
-Name:	Z#:
-Course: Date Structures and Algorithm Analysis (COP3530) Professor: Dr. Lofton Bullard
-Due Date:	Due Time:
+Name:Vladimir Petit-Homme	                            Z#:Z15346795
+Course: Date Structures and Algorithm Analysis (COP3530) Professor: Dr. Petrie
+Due Date: 09/19/2021	Due Time: 11:59pm
 Total Points: 100 Assignment 3: Date program
 
-Description:
+Description: This module implements date class and either returns the date or specific error message to the user.
 
 
 
